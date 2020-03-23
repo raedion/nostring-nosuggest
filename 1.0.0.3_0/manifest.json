@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "No String, No Suggest",
+    "short_name": "No Suggest",
+    "version": "1.0.0.3",
+    "icons": {
+        "128": "icon.png"
+    },
+    "description": "試しに作ってみたパッケージです。これを使うことでGoogleの検索のボックスに出てくる「こちらも検索してみてください」というメッセージを消去することができます。",
+    "content_scripts": [
+        {
+            "matches": [ "https://www.google.com/*", "https://www.google.co.jp/*" ],
+            "js": [ "script.js" ]
+        }
+    ]
+}
